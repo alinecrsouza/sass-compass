@@ -2,20 +2,23 @@ body {
   font-size: 20px; }
 
 .box, .azul, .vermelho, .laranja {
-  border: 1px solid;
+  border: 5px solid;
   padding: 20px;
   margin: 20px auto; }
 
 .azul {
-  color: mediumblue;
-  border-color: blue; }
+  color: white;
+  background-color: #3E5680;
+  border-color: #1f1f1f; }
 
 .vermelho {
   color: darkred;
-  border-color: red; }
+  border-color: red;
+  background-color: #a74738; }
 
 .laranja {
   color: orangered;
-  border-color: orange; }
+  border-color: orange;
+  background-color: #87662d; }
 
 /*# sourceMappingURL=style2.css.map */

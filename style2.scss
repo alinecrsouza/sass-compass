@@ -1,27 +1,42 @@
+$azul: #3E5680;
+$vermelho: #FF755F;
+$laranja: #FFB435;
+
+//custom function
+@function fixBorder($cor){
+  @return desaturate(darken($cor, 25%), 50%);
+}
+
 body{
   font-size: 20px;
 }
 
 .box{
-  border: 1px solid;
+  border: 5px solid;
   padding: 20px;
   margin: 20px auto;
 }
 
 .azul{
   @extend .box;
-  color: mediumblue;
-  border-color: blue;
+  color: white;
+  //set a default color in case of the $azul variable were not setted
+  $azul: navy !default;
+  background-color: $azul;
+  //darken is a sass function
+  border-color: fixBorder($azul);
 }
 
 .vermelho{
   @extend .box;
   color: darkred;
   border-color: red;
+  background-color: fixBorder($vermelho);
 }
 
 .laranja{
   @extend .box;
   color: orangered;
   border-color: orange;
+  background-color: fixBorder($laranja);
 }
