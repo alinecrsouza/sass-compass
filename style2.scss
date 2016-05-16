@@ -7,6 +7,14 @@ $laranja: #FFB435;
   @return desaturate(darken($cor, 25%), 50%);
 }
 
+// mixin=function+heritage+nesting
+@mixin geraBorda($cor){
+  @extend .box;
+  background-color: $cor;
+  //darken is a sass function
+  border-color: fixBorder($cor);
+}
+
 body{
   font-size: 20px;
 }
@@ -18,13 +26,11 @@ body{
 }
 
 .azul{
-  @extend .box;
   color: white;
   //set a default color in case of the $azul variable were not setted
   $azul: navy !default;
-  background-color: $azul;
-  //darken is a sass function
-  border-color: fixBorder($azul);
+  //call the mixin
+  @include geraBorda($azul);
 }
 
 .vermelho{
