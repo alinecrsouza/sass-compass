@@ -2,5 +2,27 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+$default-text-shadow-color: rgba(red, 0.6);
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 2px;
 
-@import "compass/reset";
+@import "compass";
+
+.sombra{
+  @include single-text-shadow;
+}
+
+.box{
+  border: 1px solid red;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: green;
+  @include transition;
+  &:hover{
+    background: blue;
+    $default-box-shadow-blur: 100px;
+    @include single-box-shadow;
+  }
+}
