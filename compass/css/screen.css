@@ -14,13 +14,14 @@
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  background: green;
+  background-color: green;
+  background-image: url('../images/background/back.png?1464097012');
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 23, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .box:hover {
   background: blue;
   -moz-box-shadow: 0px 5px #333333;

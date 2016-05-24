@@ -18,7 +18,9 @@ $default-text-shadow-v-offset: 2px;
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  background: green;
+  background-color: green;
+  //background-image: url('../images/background/back.png');
+  background-image: image-url('background/back.png');
   @include transition;
   &:hover{
     background: blue;
