@@ -1,27 +1,44 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 11, ../sass/screen.scss */
-.sombra {
-  text-shadow: 0px 2px 5px rgba(255, 0, 0, 0.6);
+/* line 56, icon/*.png */
+.icon-sprite, .icon-download {
+  background-image: url('../images/icon-s4a1b975a9b.png');
+  background-repeat: no-repeat;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 84, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-download {
+  background-position: 0 0;
+}
+/* line 59, ../../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-download:hover, .icon-download.download-hover {
+  background-position: 0 -302px;
+}
+
+/* line 9, ../sass/screen.scss */
+.sombra {
+  text-shadow: 0px 5px 5px rgba(255, 0, 0, 0.6);
+}
+
+/* line 13, ../sass/screen.scss */
+.icon-download {
+  width: 302px;
+  height: 302px;
+}
+
+/* line 18, ../sass/screen.scss */
 .box {
   border: 1px solid red;
   display: block;
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  background-color: green;
-  background-image: url('../images/background/back.png?1464097012');
+  background: green;
+  background-image: url('../images/background/back.jpg?1390394372');
   -moz-transition: all 1s;
   -o-transition: all 1s;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
-/* line 25, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .box:hover {
   background: blue;
   -moz-box-shadow: 0px 5px #333333;

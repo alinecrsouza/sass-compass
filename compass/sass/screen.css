@@ -1,0 +1,58 @@
+/*
+Syntax error: File to import not found or unreadable: compass.
+              Load path: /Users/wesley/Dropbox/Sites/vhosts-projects/sass-curso/compass/sass
+        on line 5 of screen.scss
+
+1: $default-text-shadow-color: rgba(red, 0.6);
+2: $default-text-shadow-blur: 5px;
+3: $default-text-shadow-v-offset: 5px;
+4: 
+5:   @import "compass";
+6: @import "icon/*.png";
+7: @include all-icon-sprites;
+8: 
+9: .sombra {
+10:   @include single-text-shadow;
+
+Backtrace:
+screen.scss:5
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/import_node.rb:45:in `import'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/exec.rb:443:in `watch_or_update'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/exec.rb:326:in `process_result'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/exec.rb:41:in `parse'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/lib/sass/exec.rb:21:in `parse!'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.13/bin/scss:13:in `<top (required)>'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/bin/scss:23:in `load'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/bin/scss:23:in `<main>'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `eval'
+/Users/wesley/.rvm/gems/ruby-1.9.3-p448/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: /Users/wesley/Dropbox/Sites/vhosts-projects/sass-curso/compass/sass\A         on line 5 of screen.scss\A \A 1: $default-text-shadow-color: rgba(red, 0.6);\A 2: $default-text-shadow-blur: 5px;\A 3: $default-text-shadow-v-offset: 5px;\A 4: \A 5:   @import \"compass\";\A 6: @import \"icon/*.png\";\A 7: @include all-icon-sprites;\A 8: \A 9: .sombra {\A 10:   @include single-text-shadow;"; }
